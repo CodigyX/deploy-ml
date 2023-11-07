@@ -5,9 +5,9 @@ import numpy as np
 from joblib import load
 import pathlib
 
-app = FastAPI(title= 'Heart Disease Classifier')
+app = FastAPI(title= 'Heart Attack Predicción')
 
-model = load(pathlib.Path('model/heart-disease-v1.joblib'))
+model = load(pathlib.Path('model/heart-attack-v1.joblib'))
 
 class InputData(BaseModel):
     age:int=64
